@@ -80,8 +80,8 @@ class GeminiEmbedder:
         self.client = genai.Client(api_key=api_key)
 
     def __call__(self, text: str) -> list[float]:
-        response = self.client.models.embed_content(model=self.model_name, contents=text)
-        return [float(value) for value in response.embeddings[0].values]
+                response = self.client.models.embed_content(model=self.model_name, contents=text)
+                return [float(value) for value in response.embeddings[0].values]
 
 
 _mock_embed = MockEmbedder()

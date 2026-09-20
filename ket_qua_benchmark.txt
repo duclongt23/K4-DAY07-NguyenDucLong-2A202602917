@@ -1,0 +1,202 @@
+================================================================================
+   K4-L3B BENCHMARK RETRIEVAL EVALUATION REPORT
+   Embedding Backend: mock embeddings fallback
+   Total Documents: 7
+================================================================================
+
+--------------------------------------------------------------------------------
+📌 CHIẾN LƯỢC: FixedSize (300/50)
+--------------------------------------------------------------------------------
+Số lượng Chunks sinh ra: 104
+
+❓ [Câu 1]: Tôi cần thực hiện những bước nào để gửi yêu cầu Trả hàng/Hoàn tiền trực tiếp trên ứng dụng Shopee?
+   🎯 Gold Doc: shopee-buyer-return-request-guide | Signature: 'Mở ứng dụng Shopee, vào mục Tôi'
+   📊 Score: 0/2 (Strict Rank: N/A, Naive Found: True)
+      Top 1 (0.224) [shopee-mall-seller-terms-of-service#5] (File: shopee-mall-seller-terms-of-service)
+         Preview: " cấp bằng chứng trong vòng tối đa **24 giờ** kể từ khi nhận được yêu cầu của Shopee.  ### 1.3. Nhận ..."
+      Top 2 (0.224) [shopee-buyer-return-request-guide#0] (File: shopee-buyer-return-request-guide)
+         Preview: "# Hướng dẫn gửi yêu cầu Trả hàng và Hoàn tiền dành cho Người mua  ## 1. Phương thức gửi yêu cầu Trả ..."
+      Top 3 (0.218) [shopee-buyer-return-request-guide#7] (File: shopee-buyer-return-request-guide)
+         Preview: "gười mua theo các mốc thời gian: - **Ví ShopeePay / Số dư Tài khoản Shopee:** Hoàn tiền trong vòng 2..."
+
+❓ [Câu 2]: Thời hạn tối đa để xử lý và phản hồi khiếu nại Trả hàng/Hoàn tiền là bao nhiêu ngày?
+   🔍 Filter: {'audience': 'seller'}
+   🎯 Gold Doc: shopee-seller-return-processing-policy | Signature: '02 ngày làm việc'
+   📊 Score: 0/2 (Strict Rank: N/A, Naive Found: False)
+      Top 1 (0.249) [shopee-mall-seller-terms-of-service#14] (File: shopee-mall-seller-terms-of-service)
+         Preview: "ề việc lựa chọn tham gia Shopee Mall và phải thực hiện các hướng dẫn, thủ tục trong thông báo đó.  #..."
+      Top 2 (0.236) [shopee-mall-seller-terms-of-service#45] (File: shopee-mall-seller-terms-of-service)
+         Preview: "trên Shopee, bao gồm chương trình, tính năng hoặc hạ tầng do Shopee triển khai. Hình thức và mức thu..."
+      Top 3 (0.143) [shopee-mall-seller-terms-of-service#33] (File: shopee-mall-seller-terms-of-service)
+         Preview: "a xác nhận “Đã nhận được hàng” và không có khiếu nại tại thời điểm xác nhận, khoản thanh toán được c..."
+
+❓ [Câu 3]: Nếu Người bán Shopee Mall vi phạm quy định bán hàng giả, hàng nhái thì bị phạt bao nhiêu tiền và xử lý như thế nào?
+   🎯 Gold Doc: shopee-mall-seller-terms-of-service | Signature: '9.818.180'
+   📊 Score: 0/2 (Strict Rank: N/A, Naive Found: True)
+      Top 1 (0.308) [shopee-general-return-policy#6] (File: shopee-general-return-policy)
+         Preview: " do người mua có thể yêu cầu Trả hàng/Hoàn tiền  | Lý do | Trường hợp áp dụng | Điều kiện áp dụng | ..."
+      Top 2 (0.305) [shopee-mall-seller-terms-of-service#13] (File: shopee-mall-seller-terms-of-service)
+         Preview: "ận thông báo. Không tuân thủ thời hạn này được xem là không cung cấp thông tin/tài liệu.  ## 2. Điều..."
+      Top 3 (0.297) [shopee-general-return-policy#11] (File: shopee-general-return-policy)
+         Preview: ", màu sắc, thông số hoặc kiểu dáng so với mô tả của Người bán | Tất cả sản phẩm | | Hàng đã qua sử d..."
+
+❓ [Câu 4]: Trường hợp nào Người mua được miễn 100% cước phí vận chuyển hoàn trả hàng?
+   🎯 Gold Doc: shopee-return-shipping-fee-policy | Signature: 'miễn phí 100%'
+   📊 Score: 0/2 (Strict Rank: N/A, Naive Found: True)
+      Top 1 (0.271) [shopee-general-return-policy#9] (File: shopee-general-return-policy)
+         Preview: "hứa chất lỏng bị rò rỉ do bao bì bể vỡ trong quá trình vận chuyển | Tất cả sản phẩm | | Hàng bể vỡ –..."
+      Top 2 (0.243) [shopee-return-shipping-fee-policy#4] (File: shopee-return-shipping-fee-policy)
+         Preview: "i tiền cước vận chuyển tự gửi (tối đa **40.000 VNĐ / đơn hàng**) dưới dạng Voucher Shopee Xu sau khi..."
+      Top 3 (0.242) [shopee-mall-seller-terms-of-service#46] (File: shopee-mall-seller-terms-of-service)
+         Preview: "Người bán  - Người bán có thể chủ động thực hiện chương trình khuyến mại dưới hình thức phát hành mã..."
+
+❓ [Câu 5]: Những trường hợp/lý do nào không được áp dụng chính sách trả hàng với lý do 'Đổi ý'?
+   🎯 Gold Doc: shopee-general-return-policy | Signature: 'danh sách hạn chế trả hàng'
+   📊 Score: 0/2 (Strict Rank: N/A, Naive Found: True)
+      Top 1 (0.393) [shopee-mall-seller-terms-of-service#3] (File: shopee-mall-seller-terms-of-service)
+         Preview: "i mua được hoàn tiền mà không cần hoàn trả sản phẩm và không có khiếu nại đối với quyết định này.  #..."
+      Top 2 (0.294) [shopee-mall-seller-terms-of-service#14] (File: shopee-mall-seller-terms-of-service)
+         Preview: "ề việc lựa chọn tham gia Shopee Mall và phải thực hiện các hướng dẫn, thủ tục trong thông báo đó.  #..."
+      Top 3 (0.278) [shopee-general-return-policy#18] (File: shopee-general-return-policy)
+         Preview: "her Người dùng mới Shopee, Voucher Người dùng mới ShopeePay và Voucher Người dùng mới SPayLater khôn..."
+
+➡️ TỔNG ĐIỂM CHIẾN LƯỢC [FixedSize (300/50)]: 0 / 10 điểm
+
+--------------------------------------------------------------------------------
+📌 CHIẾN LƯỢC: Recursive (300)
+--------------------------------------------------------------------------------
+Số lượng Chunks sinh ra: 116
+
+❓ [Câu 1]: Tôi cần thực hiện những bước nào để gửi yêu cầu Trả hàng/Hoàn tiền trực tiếp trên ứng dụng Shopee?
+   🎯 Gold Doc: shopee-buyer-return-request-guide | Signature: 'Mở ứng dụng Shopee, vào mục Tôi'
+   📊 Score: 0/2 (Strict Rank: N/A, Naive Found: False)
+      Top 1 (0.298) [shopee-buyer-return-timeline-policy#6] (File: shopee-buyer-return-timeline-policy)
+         Preview: "- Sản phẩm hoàn trả phải còn nguyên tem, nhãn mác, seal niêm phong (nếu có). - Người mua phải gửi kè..."
+      Top 2 (0.256) [shopee-general-return-policy#22] (File: shopee-general-return-policy)
+         Preview: "- Voucher Shopee Live, Video Voucher, Voucher Người dùng mới Shopee, Voucher Người dùng mới ShopeePa..."
+      Top 3 (0.249) [shopee-general-return-policy#25] (File: shopee-general-return-policy)
+         Preview: "- Mã giảm giá được hoàn có giá trị ưu đãi tương đương mã đã sử dụng; thời gian và điều kiện sử dụng ..."
+
+❓ [Câu 2]: Thời hạn tối đa để xử lý và phản hồi khiếu nại Trả hàng/Hoàn tiền là bao nhiêu ngày?
+   🔍 Filter: {'audience': 'seller'}
+   🎯 Gold Doc: shopee-seller-return-processing-policy | Signature: '02 ngày làm việc'
+   📊 Score: 0/2 (Strict Rank: N/A, Naive Found: False)
+      Top 1 (0.337) [shopee-seller-warranty-responsibility#2] (File: shopee-seller-warranty-responsibility)
+         Preview: "- **Thời hạn cung cấp phiếu / kích hoạt bảo hành:** Người bán phải gửi kèm thẻ/phiếu bảo hành giấy h..."
+      Top 2 (0.332) [shopee-seller-warranty-responsibility#5] (File: shopee-seller-warranty-responsibility)
+         Preview: "  - Người bán bị cấn trừ số tiền tương đương giá trị sản phẩm vào Số dư Tài khoản Phụ/Tài khoản Chín..."
+      Top 3 (0.285) [shopee-mall-seller-terms-of-service#2] (File: shopee-mall-seller-terms-of-service)
+         Preview: "- Nếu Shopee chủ động chấp nhận “Hoàn Tiền Ngay”, Người bán phải phản hồi hoặc khiếu nại trong vòng ..."
+
+❓ [Câu 3]: Nếu Người bán Shopee Mall vi phạm quy định bán hàng giả, hàng nhái thì bị phạt bao nhiêu tiền và xử lý như thế nào?
+   🎯 Gold Doc: shopee-mall-seller-terms-of-service | Signature: '9.818.180'
+   📊 Score: 0/2 (Strict Rank: N/A, Naive Found: True)
+      Top 1 (0.284) [shopee-mall-seller-terms-of-service#9] (File: shopee-mall-seller-terms-of-service)
+         Preview: "- Nếu địa chỉ đăng ký không chính xác và Người bán không cung cấp địa chỉ đúng, hoặc Người bán không..."
+      Top 2 (0.280) [shopee-mall-seller-terms-of-service#0] (File: shopee-mall-seller-terms-of-service)
+         Preview: "# Điều khoản Dịch vụ Shopee Mall cho Người bán  Tài liệu này trích lọc các điều khoản áp dụng trực t..."
+      Top 3 (0.257) [shopee-mall-seller-terms-of-service#19] (File: shopee-mall-seller-terms-of-service)
+         Preview: "Người bán chịu trách nhiệm đối với sự không tuân thủ, khiếm khuyết hoặc yêu cầu thu hồi liên quan đế..."
+
+❓ [Câu 4]: Trường hợp nào Người mua được miễn 100% cước phí vận chuyển hoàn trả hàng?
+   🎯 Gold Doc: shopee-return-shipping-fee-policy | Signature: 'miễn phí 100%'
+   📊 Score: 0/2 (Strict Rank: N/A, Naive Found: False)
+      Top 1 (0.450) [shopee-buyer-return-timeline-policy#0] (File: shopee-buyer-return-timeline-policy)
+         Preview: "# Quy định thời hạn và điều kiện trả hàng dành cho Người mua  ## 1. Thời hạn gửi yêu cầu Trả hàng / ..."
+      Top 2 (0.317) [shopee-mall-seller-terms-of-service#27] (File: shopee-mall-seller-terms-of-service)
+         Preview: "Người bán phải sở hữu quyền phân phối, dưới hình thức độc quyền hoặc được ủy quyền, đối với sản phẩm..."
+      Top 3 (0.264) [shopee-mall-seller-terms-of-service#46] (File: shopee-mall-seller-terms-of-service)
+         Preview: "### 8.2. Phí Xử lý Giao dịch  Phí Xử lý Giao dịch áp dụng cho đơn hàng thành công hoặc đơn phát sinh..."
+
+❓ [Câu 5]: Những trường hợp/lý do nào không được áp dụng chính sách trả hàng với lý do 'Đổi ý'?
+   🎯 Gold Doc: shopee-general-return-policy | Signature: 'danh sách hạn chế trả hàng'
+   📊 Score: 0/2 (Strict Rank: N/A, Naive Found: True)
+      Top 1 (0.258) [shopee-mall-seller-terms-of-service#34] (File: shopee-mall-seller-terms-of-service)
+         Preview: "- Không sử dụng túi, hộp hoặc băng keo mang tên/logo của sàn thương mại điện tử cạnh tranh với Shope..."
+      Top 2 (0.233) [shopee-general-return-policy#22] (File: shopee-general-return-policy)
+         Preview: "- Voucher Shopee Live, Video Voucher, Voucher Người dùng mới Shopee, Voucher Người dùng mới ShopeePa..."
+      Top 3 (0.223) [shopee-general-return-policy#21] (File: shopee-general-return-policy)
+         Preview: "### 2.3. Lưu ý về Voucher và Shopee Xu..."
+
+➡️ TỔNG ĐIỂM CHIẾN LƯỢC [Recursive (300)]: 0 / 10 điểm
+
+--------------------------------------------------------------------------------
+📌 CHIẾN LƯỢC: Heading (400)
+--------------------------------------------------------------------------------
+Số lượng Chunks sinh ra: 86
+
+❓ [Câu 1]: Tôi cần thực hiện những bước nào để gửi yêu cầu Trả hàng/Hoàn tiền trực tiếp trên ứng dụng Shopee?
+   🎯 Gold Doc: shopee-buyer-return-request-guide | Signature: 'Mở ứng dụng Shopee, vào mục Tôi'
+   📊 Score: 0/2 (Strict Rank: N/A, Naive Found: True)
+      Top 1 (0.427) [shopee-mall-seller-terms-of-service#4] (File: shopee-mall-seller-terms-of-service)
+         Preview: "### 1.2. Cung cấp bằng chứng cho Shopee  Người bán có trách nhiệm cung cấp bằng chứng trong vòng tối..."
+      Top 2 (0.336) [shopee-buyer-return-request-guide#1] (File: shopee-buyer-return-request-guide)
+         Preview: "### Cách 1: Gửi yêu cầu trực tiếp trên đơn hàng (Ứng dụng Shopee)  - **Bước 1:** Mở ứng dụng Shopee,..."
+      Top 3 (0.274) [shopee-mall-seller-terms-of-service#39] (File: shopee-mall-seller-terms-of-service)
+         Preview: "### 8.3. Phí Cố định  `Phí Cố định = (Giá sản phẩm trước Shopee trợ giá - Khuyến mãi Người bán áp dụ..."
+
+❓ [Câu 2]: Thời hạn tối đa để xử lý và phản hồi khiếu nại Trả hàng/Hoàn tiền là bao nhiêu ngày?
+   🔍 Filter: {'audience': 'seller'}
+   🎯 Gold Doc: shopee-seller-return-processing-policy | Signature: '02 ngày làm việc'
+   📊 Score: 0/2 (Strict Rank: N/A, Naive Found: False)
+      Top 1 (0.269) [shopee-mall-seller-terms-of-service#17] (File: shopee-mall-seller-terms-of-service)
+         Preview: "### 2.4. Tuân thủ quyết định Trả hàng/Hoàn tiền  Nếu yêu cầu hoàn tiền kèm trả hàng được chấp thuận,..."
+      Top 2 (0.258) [shopee-mall-seller-terms-of-service#37] (File: shopee-mall-seller-terms-of-service)
+         Preview: "### 8.2. Phí Xử lý Giao dịch  `Phí Xử lý Giao dịch = (Giá sản phẩm trước Shopee trợ giá + Phí vận ch..."
+      Top 3 (0.211) [shopee-mall-seller-terms-of-service#31] (File: shopee-mall-seller-terms-of-service)
+         Preview: "## 7. Một số phí phát sinh theo lần  | Vi phạm của Người bán | Phí | |---|---:| | Hủy đơn do hết hàn..."
+
+❓ [Câu 3]: Nếu Người bán Shopee Mall vi phạm quy định bán hàng giả, hàng nhái thì bị phạt bao nhiêu tiền và xử lý như thế nào?
+   🎯 Gold Doc: shopee-mall-seller-terms-of-service | Signature: '9.818.180'
+   📊 Score: 0/2 (Strict Rank: N/A, Naive Found: True)
+      Top 1 (0.280) [shopee-mall-seller-terms-of-service#0] (File: shopee-mall-seller-terms-of-service)
+         Preview: "# Điều khoản Dịch vụ Shopee Mall cho Người bán  Tài liệu này trích lọc các điều khoản áp dụng trực t..."
+      Top 2 (0.280) [shopee-buyer-return-request-guide#2] (File: shopee-buyer-return-request-guide)
+         Preview: "### Cách 1: Gửi yêu cầu trực tiếp trên đơn hàng (Ứng dụng Shopee)    - *"Tôi chưa nhận hàng / nhận t..."
+      Top 3 (0.212) [shopee-mall-seller-terms-of-service#10] (File: shopee-mall-seller-terms-of-service)
+         Preview: "### 1.5. Kiểm tra và khiếu nại Sản phẩm Hoàn trả  - Nếu Sản phẩm Hoàn trả bị hư hại do vận chuyển, N..."
+
+❓ [Câu 4]: Trường hợp nào Người mua được miễn 100% cước phí vận chuyển hoàn trả hàng?
+   🎯 Gold Doc: shopee-return-shipping-fee-policy | Signature: 'miễn phí 100%'
+   📊 Score: 0/2 (Strict Rank: N/A, Naive Found: False)
+      Top 1 (0.282) [shopee-mall-seller-terms-of-service#7] (File: shopee-mall-seller-terms-of-service)
+         Preview: "### 1.3. Nhận lại Sản phẩm Hoàn trả  - Người bán đồng ý rằng quyết định giải quyết yêu cầu Trả hàng/..."
+      Top 2 (0.264) [shopee-mall-seller-terms-of-service#35] (File: shopee-mall-seller-terms-of-service)
+         Preview: "### 8.2. Phí Xử lý Giao dịch  Phí Xử lý Giao dịch áp dụng cho đơn hàng thành công hoặc đơn phát sinh..."
+      Top 3 (0.261) [shopee-mall-seller-terms-of-service#26] (File: shopee-mall-seller-terms-of-service)
+         Preview: "## 4. Quy định đóng gói  - Hàng dễ vỡ phải được chèn mút xốp đủ sáu mặt tiếp xúc với hộp ngoài cùng...."
+
+❓ [Câu 5]: Những trường hợp/lý do nào không được áp dụng chính sách trả hàng với lý do 'Đổi ý'?
+   🎯 Gold Doc: shopee-general-return-policy | Signature: 'danh sách hạn chế trả hàng'
+   📊 Score: 0/2 (Strict Rank: N/A, Naive Found: True)
+      Top 1 (0.452) [shopee-seller-warranty-responsibility#2] (File: shopee-seller-warranty-responsibility)
+         Preview: "## 2. Nghĩa vụ kích hoạt và tiếp nhận bảo hành    - Người bán phải tiếp nhận và phản hồi tình trạng ..."
+      Top 2 (0.225) [shopee-return-shipping-fee-policy#0] (File: shopee-return-shipping-fee-policy)
+         Preview: "## 1. Quy định về miễn phí cước vận chuyển trả hàng  Khi yêu cầu Trả hàng/Hoàn tiền được Shopee chấp..."
+      Top 3 (0.222) [shopee-general-return-policy#16] (File: shopee-general-return-policy)
+         Preview: "### 2.3. Lưu ý về Voucher và Shopee Xu  - Mã giảm giá được hoàn trong vòng **48 giờ**, không kể thứ ..."
+
+➡️ TỔNG ĐIỂM CHIẾN LƯỢC [Heading (400)]: 0 / 10 điểm
+
+================================================================================
+ 🧪 THỬ NGHIỆM A/B: METADATA FILTERING CÓ GIÚP ÍCH KHÔNG? (CÂU HỎI #2)
+================================================================================
+
+🔸 Chiến lược [FixedSize (300/50)]:
+   - CÓ Filter (audience=seller) : Score=0/2 | Top-1 Doc: shopee-mall-seller-terms-of-service
+   - KHÔNG Filter                : Score=0/2 | Top-1 Doc: shopee-mall-seller-terms-of-service
+
+🔸 Chiến lược [Recursive (300)]:
+   - CÓ Filter (audience=seller) : Score=0/2 | Top-1 Doc: shopee-seller-warranty-responsibility
+   - KHÔNG Filter                : Score=0/2 | Top-1 Doc: shopee-seller-warranty-responsibility
+
+🔸 Chiến lược [Heading (400)]:
+   - CÓ Filter (audience=seller) : Score=0/2 | Top-1 Doc: shopee-mall-seller-terms-of-service
+   - KHÔNG Filter                : Score=0/2 | Top-1 Doc: shopee-general-return-policy
+
+================================================================================
+ 🏆 BẢNG TỔNG HỢP ĐIỂM CHẤT LƯỢNG TRUY XUẤT CÁC CHIẾN LƯỢC
+================================================================================
+  • FixedSize (300/50)       : 0 / 10 điểm
+  • Recursive (300)          : 0 / 10 điểm
+  • Heading (400)            : 0 / 10 điểm
